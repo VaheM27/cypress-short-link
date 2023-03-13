@@ -1,27 +1,33 @@
-# ShortLink
+# URL Shortener Tool
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+This is a simple URL shortener tool built with Angular and powered by https://shrtco.de/docs API.
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This tool allows you to shorten any URL to a more user-friendly format. Simply enter the URL you want to shorten and the tool will generate two clickable shortened links for you to use.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Simple and easy-to-use interface
+- Generates two shortened links for each URL entered
+- Clickable links for easy sharing and access
+- Powered by the shrtco.de API
 
-## Build
+## Technologies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project was built with the following technologies:
 
-## Running unit tests
+- Angular (version 12)
+- Typescript
+- NGRX
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+To get started with this project, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1.  Clone the repository: `git clone https://github.com/VaheM27/cypress-short-link.git`
+2.  Install the dependencies: `npm install`
+3.  Run the application: `npm run dev`
+4.  Open your browser and navigate to http://localhost:4200.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage To use this tool, simply enter a URL into the input field and click the "Shorten" button. The tool will generate two shortened links for you to use.
