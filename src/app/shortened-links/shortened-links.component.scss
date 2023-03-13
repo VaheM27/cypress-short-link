@@ -30,6 +30,15 @@
     }
   }
 
+  .unActive {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  .active {
+    display: flex;
+  }
+
   .last_url {
     background-color: rgb(230, 226, 226);
     padding: 20px;

@@ -9,7 +9,8 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ShortenFormComponent {
   url: string;
-  shortenedLinks: { short_link: string; short_link2: string }[] = [];
+  shortenedLinks: { short_link: string; short_link2: string; code: string }[] =
+    [];
   constructor(private urlShortenerService: UrlShortenerService) {}
 
   @Output() dataEvent = new EventEmitter<any>();

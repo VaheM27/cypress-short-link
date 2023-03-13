@@ -4,8 +4,24 @@
       Short url:
       <a href="{{ link.short_link }}" target="_blank">{{ link.short_link }}</a>
     </h1>
-    <img src="../../assets/copy.png" (click)="copyData(link.short_link)" />
+    <div
+      [ngClass]="[copiedFirst && link.code === copiedCode ? 'unActive' : '']"
+    >
+      <img
+        src="../../assets/copy.png"
+        (click)="copyData(link.short_link, 'short_link', link.code)"
+      />
+    </div>
+    <img
+      [ngClass]="[
+        'unActive',
+        copiedFirst && link.code === copiedCode ? 'active' : ''
+      ]"
+      src="../../assets/check.png"
+      alt=""
+    />
   </div>
+
   <div class="last_url">
     <h1>
       Short url 2:
@@ -13,6 +29,19 @@
         link.short_link2
       }}</a>
     </h1>
-    <img src="../../assets/copy.png" (click)="copyData(link.short_link2)" />
+    <div [ngClass]="[copiedLast && link.code === copiedCode ? 'unActive' : '']">
+      <img
+        src="../../assets/copy.png"
+        (click)="copyData(link.short_link2, 'short_link2', link.code)"
+      />
+    </div>
+    <img
+      [ngClass]="[
+        'unActive',
+        copiedLast && link.code === copiedCode ? 'active' : ''
+      ]"
+      src="../../assets/check.png"
+      alt=""
+    />
   </div>
 </div>

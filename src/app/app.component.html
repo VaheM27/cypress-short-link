@@ -3,3 +3,9 @@
   <app-shorten-form (dataEvent)="onDataReceived($event)"></app-shorten-form>
   <app-shortened-links [shortenedLinks]="shortenedLinks"></app-shortened-links>
 </div>
+<div
+  class="cursor"
+  [style.top]="top"
+  [style.left]="left"
+  [ngClass]="{ expand: expand }"
+></div>

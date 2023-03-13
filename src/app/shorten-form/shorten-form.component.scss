@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 600px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
 
     input {
       width: 300px;
@@ -33,6 +35,32 @@
       border-radius: 50px;
       transition: 300ms;
       padding: 20px 30px;
+      margin-left: 30px;
+    }
+
+    button:hover {
+      background-color: rgb(13, 64, 249);
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tool_container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  form {
+    flex-direction: column;
+
+    input {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 40px;
+      margin-left: 0;
     }
   }
 }
