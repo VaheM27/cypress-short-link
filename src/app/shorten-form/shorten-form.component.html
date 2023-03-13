@@ -1,0 +1,13 @@
+<div class="tool_container">
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      id="url"
+      [(ngModel)]="url"
+      name="url"
+      required
+      placeholder="Type URL"
+    />
+    <button type="submit">Shorten URL</button>
+  </form>
+</div>

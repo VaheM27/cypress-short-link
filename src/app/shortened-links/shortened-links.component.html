@@ -1,0 +1,18 @@
+<div *ngFor="let link of shortenedLinks" class="urls">
+  <div class="first_url">
+    <h1>
+      Short url:
+      <a href="{{ link.short_link }}" target="_blank">{{ link.short_link }}</a>
+    </h1>
+    <img src="../../assets/copy.png" (click)="copyData(link.short_link)" />
+  </div>
+  <div class="last_url">
+    <h1>
+      Short url 2:
+      <a href="{{ link.short_link2 }}" target="_blank">{{
+        link.short_link2
+      }}</a>
+    </h1>
+    <img src="../../assets/copy.png" (click)="copyData(link.short_link2)" />
+  </div>
+</div>

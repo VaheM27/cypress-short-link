@@ -1,0 +1,38 @@
+.tool_container {
+  form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+
+    input {
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid grey;
+      border-radius: 200px;
+    }
+
+    input[placeholder] {
+      padding: 20px 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+
+    input:focus {
+      outline: none;
+      color: black;
+    }
+    button {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      cursor: pointer;
+      background-color: #0e7be0;
+      color: white;
+      border: 1px solid #0e7be0;
+      border-radius: 50px;
+      transition: 300ms;
+      padding: 20px 30px;
+    }
+  }
+}
